@@ -19,7 +19,7 @@ public class HomeController {
         return "reveal";
     }
 
-    @GetMapping("/proposal")
+    @GetMapping("/proposals")
     public String proposal() {
         return "proposal";
     }
