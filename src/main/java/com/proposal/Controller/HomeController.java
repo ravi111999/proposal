@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class HomeController {
     @GetMapping("/")
     public String home() {
-        return "index";
+        return "home";
     }
 
     @GetMapping("/prank")
@@ -19,7 +19,7 @@ public class HomeController {
         return "reveal";
     }
 
-    @GetMapping("/proposals")
+    @GetMapping("/proposal")
     public String proposal() {
         return "proposal";
     }
