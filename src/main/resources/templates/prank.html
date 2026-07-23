@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Security Scan</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js"></script>
+
+    <style>
+
+        body{
+            background:#000;
+            color:#00ff00;
+            font-family:Consolas, monospace;
+            overflow:hidden;
+        }
+
+        .terminal{
+
+            width:90%;
+            max-width:800px;
+            background:#111;
+            border:2px solid #00ff00;
+            border-radius:10px;
+            padding:30px;
+            box-shadow:0 0 20px #00ff00;
+
+        }
+
+        h1{
+
+            text-align:center;
+            margin-bottom:20px;
+
+        }
+
+        #loadingText{
+
+            font-size:22px;
+            margin-top:20px;
+
+        }
+
+        .loader{
+
+            margin-top:30px;
+
+        }
+
+        .progress{
+
+            animation:load 6s forwards;
+
+        }
+
+    </style>
+
+</head>
+
+<body onload="startLoading()">
+
+<div class="terminal">
+
+    <h1>⚠ SYSTEM SECURITY SCAN ⚠</h1>
+
+    <p>> Connecting to Secure Server...</p>
+    <p>> Access Granted...</p>
+    <p>> Scanning Device...</p>
+    <p>> Please Wait...</p>
+
+    <div id="loadingText">
+        Initializing...
+    </div>
+
+    <div class="loader">
+        <div class="progress"></div>
+    </div>
+
+</div>
+
+</body>
+</html>
+What happens?

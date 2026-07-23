@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>My Question ❤️</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/js/script.js"></script>
+
+    <style>
+
+        body{
+
+            background:linear-gradient(135deg,#ff416c,#ff4b2b);
+            overflow:hidden;
+
+        }
+
+        .proposal{
+
+            text-align:center;
+            background:white;
+            padding:50px;
+            border-radius:20px;
+            box-shadow:0 10px 40px rgba(0,0,0,.3);
+            max-width:700px;
+
+        }
+
+        h1{
+
+            color:#ff0066;
+            font-size:45px;
+
+        }
+
+        h2{
+
+            color:#444;
+            margin-top:20px;
+            line-height:1.6;
+
+        }
+
+        .buttons{
+
+            margin-top:50px;
+            position:relative;
+            height:180px;
+
+        }
+
+        #yesBtn{
+
+            margin-right:100px;
+
+        }
+
+        #noBtn{
+
+            width:100px;
+
+        }
+
+        img{
+
+            width:180px;
+            margin-bottom:20px;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="proposal">
+
+    <img src="/images/ring.png" alt="Ring">
+
+    <h1>❤️ My Sweety ❤️</h1>
+
+    <h2>
+
+        Every moment with you is special.
+
+        You make my life brighter,
+
+        my heart happier,
+
+        and my world more beautiful.
+
+        <br><br>
+
+        I have just one question...
+
+    </h2>
+
+    <h1 style="margin-top:30px;">
+
+        💍 Will You Be Mine Forever? 💍
+
+    </h1>
+
+    <div class="buttons">
+
+        <button id="yesBtn" onclick="sayYes()">
+
+            YES ❤️
+
+        </button>
+
+        <button id="noBtn"
+
+                onmouseover="moveNoButton()"
+
+                onclick="moveNoButton()">
+
+            NO 💔
+
+        </button>
+
+    </div>
+
+</div>
+
+<script>
+
+    function sayYes(){
+
+        confetti();
+
+        setTimeout(function(){
+
+            window.location.href="/success";
+
+        },2500);
+
+    }
+
+</script>
+
+</body>
+
+</html>

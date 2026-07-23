@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>She Said YES ❤️</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js"></script>
+
+    <style>
+
+        body{
+
+            margin:0;
+            padding:0;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+            background:linear-gradient(135deg,#ff5f6d,#ffc371);
+            overflow:hidden;
+
+        }
+
+        .container{
+
+            text-align:center;
+            color:white;
+            animation:fadeIn 2s;
+
+        }
+
+        h1{
+
+            font-size:65px;
+
+        }
+
+        h2{
+
+            font-size:35px;
+
+        }
+
+        p{
+
+            font-size:22px;
+            width:80%;
+            margin:auto;
+            line-height:1.8;
+
+        }
+
+        img{
+
+            width:220px;
+            margin:20px;
+
+        }
+
+        @keyframes fadeIn{
+
+        from{
+
+        opacity:0;
+        transform:scale(.5);
+
+        }
+
+        to{
+
+        opacity:1;
+        transform:scale(1);
+
+        }
+
+        }
+
+    </style>
+
+</head>
+
+<body onload="confetti()">
+
+<div class="container">
+
+    <img src="/images/couple.png">
+
+    <h1>❤️ SHE SAID YES ❤️</h1>
+
+    <h2>🎉 Best Day of My Life 🎉</h2>
+
+    <br>
+
+    <p>
+
+        Thank you for making me the happiest person in the world.
+
+        I promise to stand beside you,
+
+        support you,
+
+        make you smile,
+
+        and love you forever.
+
+        ❤️
+
+    </p>
+
+    <br>
+
+    <h2>
+
+        I Love You So Much ❤️
+
+    </h2>
+
+</div>
+
+<audio autoplay loop>
+
+    <source src="/music/love.mp3" type="audio/mp3">
+
+</audio>
+
+</body>
+
+</html>
